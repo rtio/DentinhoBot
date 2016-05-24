@@ -1,18 +1,18 @@
 {
-  "name": "Bot-Telegram-BeMEAN",
+  "name": "DentinhoBot",
   "version": "1.0.0",
-  "description": "Bot para o Teegram do grupo do Be MEAN",
+  "description": "Bot para o Telegram do grupo Odonto System - Fortaleza",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
     "bot",
-    "bemean",
+    "odonto",
     "telegram"
   ],
-  "author": "WebSchool / BeMEAN",
-  "license": "ISC",
+  "author": "Rafael Meneses",
+  "license": "",
   "dependencies": {
     "cheerio": "^0.20.0",
     "cheerio-advanced-selectors": "^1.1.0",

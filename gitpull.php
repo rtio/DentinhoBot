@@ -5,7 +5,7 @@ error_reporting(E_ALL);
 function sendMessage($message, $encoded = false){
 	$env = file_get_contents('.env');
 	$API_KEY = substr($env, 10);
-	$url = "https://api.telegram.org/bot$API_KEY/sendMessage?chat_id=-108631846&parse_mode=Markdown&text=";
+	$url = "https://api.telegram.org/bot150402707:AAH5RRBbEXydSiSvOvCP4sRxPYMd-ZA-iDI/sendMessage?chat_id=-108631846&parse_mode=Markdown&text=";
 	if(!$encoded){
 		$message = urlencode($message);
 	}

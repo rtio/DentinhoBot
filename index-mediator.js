@@ -6,7 +6,7 @@ require('dotenv').config();
 const Mediator = require('./modules/mediator/');
 
 
-const token = process.env.API_TOKEN || 'INSERT API_TOKEN';
+const token = process.env.API_TOKEN || '150402707:AAH5RRBbEXydSiSvOvCP4sRxPYMd-ZA-iDI';
 // Setup polling way
 const bot = new TelegramBot(token, { polling: true });
 
@@ -34,9 +34,9 @@ bot.onText(/^\/([a-zA-Z]+) ?([^@]+)?/, (msg, match) => {
   }
 });
 
-// command1@BeMEANoficial_bot
-bot.onText(/^\/command1@BeMEANoficial_bot/i, (msg, match) => {
-  bot.sendMessage(msg.chat.id, 'ESSE COMANDO NAO EXISTE PORRAA!!!!');
+// command1@OdontoBot
+bot.onText(/^\/command1@OdontoBot/i, (msg, match) => {
+  bot.sendMessage(msg.chat.id, 'ESSE COMANDO NAO EXISTE JOVEM');
 });
 
 
@@ -80,8 +80,8 @@ bot.onText(/^impar/i, (msg, match) => {
 bot.onText(/(Math\.)|\(?-?[.0-9]+(\s*[-+\/*]\s*-?[0-9Math]+)+(\)|\b|)/i, (msg, match) => {
   services.math.execute(bot, msg);
 });
-bot.onText(/(420)|maconha|weed|marijuana|erva|bagulho/i, (msg, match) => {
-  services.maconha.execute(bot, msg);
+bot.onText(/(420)|odonto|dente|odontosystem|dentista|carie/i, (msg, match) => {
+  services.odonto.execute(bot, msg);
 });
 // risada
 bot.onText(/lol|kkkk|huehue|h+a+h+a+|h+e+h+e+|h+i+h+i+|h+u+a+s+|j+e+j+e+|h+u+a+h+u+a|h+u+e+h+u+e/i, (msg, match) => {

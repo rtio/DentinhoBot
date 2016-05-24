@@ -39,7 +39,7 @@ const execute = (bot, msg, match) => {
         }
         else {
           const sticker = stickers[Math.floor(Math.random() * stickers.length)];
-          const _return = "<b>Não achei nada jovem!</b> Sorry mesmo, mas você pode fumar um pra relaxar.";
+          const _return = "<b>Não achei nada jovem!</b> Sorry mesmo, fica de boas e relax.";
           bot.sendMessage(msg.chat.id, _return, parse);
           bot.sendSticker(msg.chat.id, sticker);
         }

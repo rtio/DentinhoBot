@@ -16,7 +16,7 @@ const stickers = [
 
 const execute = (bot, msg) => {
     const sticker = stickers[Math.floor(Math.random() * stickers.length)];
-    bot.sendMessage(msg.chat.id, "Legalize já :P", {'reply_to_message_id': msg.message_id});
+    bot.sendMessage(msg.chat.id, "Odonto System", {'reply_to_message_id': msg.message_id});
     bot.sendSticker(msg.chat.id, sticker, {'reply_to_message_id': msg.message_id});
 }
 

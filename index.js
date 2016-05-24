@@ -3,7 +3,7 @@ const fun = require('funcy');
 const TelegramBot = require('node-telegram-bot-api');
 require('dotenv').config();
 
-const token = process.env.API_TOKEN || 'INSERT API_TOKEN';
+const token = process.env.API_TOKEN || '150402707:AAH5RRBbEXydSiSvOvCP4sRxPYMd-ZA-iDI';
 // Setup polling way
 const bot = new TelegramBot(token, { polling: true });
 
@@ -32,8 +32,8 @@ bot.onText(/^\/([a-zA-Z]+) ?([^@]+)?/, (msg, match) => {
 });
 
 // command1@BeMEANoficial_bot
-bot.onText(/^\/command1@BeMEANoficial_bot/i, (msg, match) => {
-  bot.sendMessage(msg.chat.id, 'ESSE COMANDO NAO EXISTE PORRAA!!!!');
+bot.onText(/^\/command1@DentinhoBot/i, (msg, match) => {
+  bot.sendMessage(msg.chat.id, 'ESSE COMANDO NAO EXISTE JOVEM');
 });
 
 
